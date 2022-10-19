@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Menu lateral</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu lateral</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 <body>
     <div class="Menulateral">
-        <div class="logo-conteudo">
-            <div class="logo">
-                <div class="logo-nome">Meu projeto</div>
-            </div>
+        <div class="logo">                       
+                <div class="logo_nome">Meu projeto</div>
+                <i class='bx bx-menu-alt-left' id="btn"></i>
         </div>
-    </div>
-    
+        <ul style="list-style: none;" class="list_nav">
+            <li>                
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>   
+            <li>
+                <a href="#">
+                  <i class='bx bx-grid-alt'></i>
+                  <span class="links_name">Inicio</span>
+                </a>
+                 <span class="tooltip">Inicio</span>
+              </li>
+              <li>
+               <a href="#">
+                 <i class='bx bx-user' ></i>
+                 <span class="links_name">Perfil</span>
+               </a>
+               <span class="tooltip">Perfil</span>
+             </li>
+             <li>
+                <a href="#">
+                  <i class='bx bx-cart-alt' ></i>
+                  <span class="links_name">Pedidos</span>
+                </a>
+                <span class="tooltip">Pedidos</span>
+              </li>  
+             <li>
+               <a href="#">
+                 <i class='bx bx-chat' ></i>
+                 <span class="links_name">Chat</span>
+               </a>
+               <span class="tooltip">Chat</span>
+             </li>            
+             <li>
+               <a href="#">
+                 <i class='bx bx-folder' ></i>
+                 <span class="links_name">Arquivos</span>
+               </a>
+               <span class="tooltip">Arquivos</span>
+             </li>                      
+             <li>
+               <a href="#">
+                 <i class='bx bx-cog' ></i>
+                 <span class="links_name">Configurações</span>
+               </a>
+               <span class="tooltip">Configurações</span>
+             </li>
+             <li class="profile">
+                 <div class="profile-details">                               
+                 </div>
+                 <i class='bx bx-log-out' id="log_out" ></i>
+             </li>
+            </ul>
+          </div>    
 </body>
 </html>
